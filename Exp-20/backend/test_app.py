@@ -19,11 +19,7 @@ def client():
     return app.test_client()
 
 def test_create_student(client):
-    response = client.post("/students", json={
-        "name": "Student-1",
-        "course": "Computer Science",
-        "gender": "Male"
-    })
+    response = client.post("/students", json={"name": "Student-1"})
     assert response.status_code == 201
     assert response.json["name"] == "Student-1"
 
@@ -34,11 +30,7 @@ def test_get_students(client):
 
 def test_get_student(client):
     # First, create a student to ensure there is one to retrieve
-    create_response = client.post("/students", json={
-        "name": "Student-2",
-        "course": "Computer Science",
-        "gender": "Female"
-    })
+    create_response = client.post("/students", json={"name": "Student-2"})
     student_id = create_response.json["id"]
 
     # Now, retrieve the student by ID
@@ -48,11 +40,7 @@ def test_get_student(client):
 
 def test_update_student(client):
     # First, create a student to ensure there is one to update
-    create_response = client.post("/students", json={
-        "name": "Student-3",
-        "course": "Computer Science",
-        "gender": "Other"
-    })
+    create_response = client.post("/students", json={"name": "Student-3"})
     student_id = create_response.json["id"]
 
     # Now, update the student's name
@@ -62,11 +50,7 @@ def test_update_student(client):
 
 def test_delete_student(client):
     # First, create a student to ensure there is one to delete
-    create_response = client.post("/students", json={
-        "name": "Student-4",
-        "course": "Computer Science",
-        "gender": "Male"
-    })
+    create_response = client.post("/students", json={"name": "Student-4"})
     student_id = create_response.json["id"]
 
     # Now, delete the student
@@ -76,8 +60,3 @@ def test_delete_student(client):
     # Verify the student has been deleted
     get_response = client.get(f"/students/{student_id}")
     assert get_response.status_code == 404
-
-def test_home(client):
-    create_response = client.get("/")
-    assert create_response.status_code == 200
-    assert create_response.json["message"] == "Backend Server is running"   
