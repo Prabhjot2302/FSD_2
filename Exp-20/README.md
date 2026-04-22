@@ -10,12 +10,12 @@
 
 
 ### Backend Running
-!(./screenshots/Screenshot%202026-04-22%20203541.png)
+![](./screenshots/Screenshot%202026-04-22%20203541.png)
 
-!(./screenshots/Screenshot%202026-04-22%20204317.png)
+![](./screenshots/Screenshot%202026-04-22%20204317.png)
 
-!(./screenshots/Screenshot%202026-04-22%20205744.png)
+![](./screenshots/Screenshot%202026-04-22%20205744.png)
 
-!screenshots/Screenshot%202026-04-22%20210249.png)
+![](screenshots/Screenshot%202026-04-22%20210249.png)
 
-!(./screenshots/Screenshot%202026-04-22%20210303.png)
+![](./screenshots/Screenshot%202026-04-22%20210303.png)
