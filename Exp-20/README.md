@@ -8,19 +8,14 @@
 4. **Frontend-Backend Validation Alignment** - Implement client-side form validation that mirrors backend requirements, ensuring data integrity across the stack.
 5. **CI/CD Automation** - Set up GitHub Actions workflows to automatically test both Python and Node.js services on code changes.
 
-## 📸 Screenshots
 
 ### Backend Running
-![Backend](./screenshots/Screenshot%202026-04-22%20203541.png)
+!(./screenshots/Screenshot%202026-04-22%20203541.png)
 
-### Frontend - Student Management Form
-![Frontend UI](./screenshots/Screenshot%202026-04-22%20204317.png)
+!(./screenshots/Screenshot%202026-04-22%20204317.png)
 
-### Student Data List
-![Student List](./screenshots/Screenshot%202026-04-22%20205744.png)
+!(./screenshots/Screenshot%202026-04-22%20205744.png)
 
-### API Endpoints
-![API](./screenshots/Screenshot%202026-04-22%20210249.png)
+!screenshots/Screenshot%202026-04-22%20210249.png)
 
-### Docker Containers
-![Docker](./screenshots/Screenshot%202026-04-22%20210303.png)
+!(./screenshots/Screenshot%202026-04-22%20210303.png)
