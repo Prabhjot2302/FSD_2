@@ -1,0 +1,35 @@
+services:
+  backend:
+    build:
+      context: ./Exp-20/backend
+      dockerfile: Dockerfile
+    container_name: exp20-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - ./Exp-20/backend:/app
+    networks:
+      - exp20-network
+
+  frontend:
+    build:
+      context: ./Exp-20/Frontend
+      dockerfile: Dockerfile
+    container_name: exp20-frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_URL=http://backend:5000
+    volumes:
+      - ./Exp-20/Frontend:/app
+      - /app/node_modules
+    networks:
+      - exp20-network
+
+networks:
+  exp20-network:
+    driver: bridge
