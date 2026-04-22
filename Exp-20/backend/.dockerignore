@@ -1,0 +1,14 @@
+__pycache__
+*.py[cod]
+*$py.class
+.pytest_cache
+.mypy_cache
+.venv
+venv
+.env
+*.db
+.git
+.gitignore
+.dockerignore
+test_app.py
+conftest.py
